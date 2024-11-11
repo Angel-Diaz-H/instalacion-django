@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header nav {
+    display: grid;
+    grid-template-columns: repeat(5, auto); /* Crea una columna para cada enlace */
+
+    gap: 30px; /* Ajusta este valor para controlar el espacio entre los enlaces */
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'MantiniaRegular';
+    src: url('fonts/Mantinia Regular.otf') format('opentype');
+}
+
+* {
+    color: #efce9e;
+    font-family: 'MantiniaRegular', sans-serif;
+    position: relative;
+    z-index: 5;
+}
+
+.main {
+    background-image: url('elden.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.main::before {
+    content: ''; /* Necesario para el pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento sobre el contenedor */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Color negro semitransparente */
+    z-index: 1; /* Asegura que el negro esté encima de la imagen */
+}
+
+
+.header {
+    background-color: #30413d;
+    height: 10vh;
+
+}
+
+.footer {
+    height: 10vh;
+
+    background-color: #30413d;
+}

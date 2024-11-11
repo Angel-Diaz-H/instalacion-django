@@ -1,0 +1,8 @@
+# Ignorar la carpeta de entorno virtual
+venv/
+
+# Ignorar la carpeta de configuración de Visual Studio Code
+.vscode/
+
+# Ignorar el archivo de base de datos SQLite
+*.sqlite3
